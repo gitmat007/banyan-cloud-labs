@@ -1,0 +1,33 @@
+//import io.lang.*;
+
+// package com.tryCatchFinally;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try
+	    {
+	      System.out.println ("I am within try");
+	      
+	      System.out.println ("I am initiating a correct divide within try");
+	      System.out.println (10 / 5);
+	      System.out.println ("The correct divide is successful and within try");
+	      
+	      System.out.println ("I am initiating a wrong divide within try");
+	      System.out.println (10 / 0);
+	      System.out.println ("The wrong divide has happened within try");
+	    }
+	    catch (ArithmeticException ae)
+	    {
+	      System.out.println ("I am within catch");
+	      System.out.println ("The exception message is " + ae.getMessage());
+	    }
+	    finally
+	    {
+	      System.out.println ("I am within finally");
+	    }
+	    System.out.println ("I am after and outside try catch finally");
+	}
+
+}
