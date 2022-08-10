@@ -1,0 +1,19 @@
+CREATE TABLE Persons (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255)
+); 
+
+INSERT INTO Persons
+VALUES (1, "Elangovan", "Mathivanan", "Sholinganallur", "Kancheepuram");
+
+INSERT INTO Persons
+VALUES (2, "Perumal", "Saravanan", "Mylapore", "Tirunelveli");
+
+INSERT INTO Persons
+VALUES (3, "Saktheeswaran" , "Sasikala", "Vadapalani", "Chennai");
+
+SELECT FirstName, LastName, Address, City
+FROM Persons;
